@@ -60,16 +60,21 @@ function userincompany(anybody){
 
 // userincompany(user) we can also pass object directly
 
-userincompany({
-    name: "naed",
-    age : 232
-})
+// userincompany({
+//     name: "naed",
+//     age : 232
+// })
 
 
 
+const myarray = [100,200,2300]
 
+function arraname(arr){
+    console.log(`second value of array is ${arr[1]}`);
 
+}
 
+arraname(myarray);//same we pass array directly without name arrname([100,200,2300])
 
 
 
