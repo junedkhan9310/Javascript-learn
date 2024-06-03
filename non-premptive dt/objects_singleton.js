@@ -47,18 +47,29 @@ const obj4 ={
 const obj3 = {...obj1,...obj2,...obj4}
 // console.log(obj3);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 
-console.log(Object.keys(tinderUser)); //gives value to key in array format so we can store it somewhere
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser)); //gives value to key in array format so we can store it somewhere
+// console.log(Object.values(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('name'));
+// console.log(tinderUser.hasOwnProperty('name'));
 
+//*****************destructing */
 
+const course = {
+    name: "nijif",
+    fees:999,
+    instructor : "juned"
+}
 
+//we can simply want to use this so we'll simply write course.fees but we jave one more way for doing if we want to do it again and again
 
+// const {fees}=course; //we can also rename it 
+// console.log(fees);
 
+const {fees:fe}=course;
+console.log(fe);
 
 
 
