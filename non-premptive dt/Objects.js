@@ -73,14 +73,3 @@ console.log(jsUSer.greeting2());
 
 
 
-
-
-
-
-
-
-
-
-
-
-
