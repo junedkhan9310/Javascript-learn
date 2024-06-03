@@ -1,4 +1,4 @@
-const { all } = require("axios");
+
 
 const dc_hero = ["supeman","batman","flash"]
 const mar_hero = ["iron","cpatain","thor"]

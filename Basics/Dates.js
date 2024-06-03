@@ -21,8 +21,8 @@ let anotherdate = new Date(2004,11,15)
 // console.log(anotherdate.toLocaleString());
 
 
-let mystamp = Date.now() 
-// console.log(mystamp); //gives the time in milisecond
+let mystamp = Date.now()  //.now will give time in miliseconds 
+// console.log(mystamp); 
 
 // console.log(anotherdate.getTime()); //getting time of this laso in milisecond so we can compare
 
