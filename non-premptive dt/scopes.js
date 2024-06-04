@@ -15,7 +15,19 @@ if(true){
 // console.log(c);  //this can be use due to var this is disadvatage of 'var' even without var tis problem will exists
 
 
+////nested scope
 
+function one(){
+    const username = "juned"
+    function two(){
+        age= 20
+        console.log(username);
+        // console.log(age);
+    }
+    // console.log(age);
+    two()
+}
+one()
 
 
 
