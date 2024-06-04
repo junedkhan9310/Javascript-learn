@@ -27,11 +27,22 @@ function one(){
     // console.log(age);
     two()
 }
-one()
+// one()
 
+//************intresting******* */
 
+function addone(num){
+    return num+1
+}
 
+addone(5);//when we declare function like this we can use it before the function writing but with below we can't
 
+//other way of wriitng function in expressing
+
+const addTwo= function(num){
+    return num+2
+}
+addTwo(6)
 
 
 
