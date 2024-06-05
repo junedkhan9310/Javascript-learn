@@ -1,6 +1,6 @@
 //singleton
 
-const tinderUser = new Object()
+const tinderUser = new Object
 // const tinderUser= {}   //tis is non-singleton object
 
 tinderUser.id="1234v"
@@ -55,7 +55,7 @@ const obj3 = {...obj1,...obj2,...obj4}
 
 // console.log(tinderUser.hasOwnProperty('name'));
 
-//*****************destructing */
+//*****************destructing ******************/
 
 const course = {
     name: "nijif",
@@ -65,7 +65,7 @@ const course = {
 
 //we can simply want to use this so we'll simply write course.fees but we jave one more way for doing if we want to do it again and again
 
-// const {fees}=course; //we can also rename it 
+const {fees}=course; //we can also rename it 
 // console.log(fees);
 
 const {fees:fe}=course;

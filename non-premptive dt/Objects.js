@@ -24,7 +24,7 @@ jsUSer.email = "kk@123.com"
 // console.log(jsUSer);
 
 jsUSer.greeting = function() { //adding function to a object
-    console.log("hello babi");
+    console.log("hello bhhai");
 }
 
 jsUSer.greeting2 = function() { //adding function to a object

@@ -45,12 +45,16 @@ const addTwo= function(num){
 addTwo(6)
 
 
+// function jk(){
+//     console.log("hi");
+// }
 
+// const namemi = {
+//     kj:"name"
 
-
-
-
-
+// }
+// jk()
+// console.log(namemi.kj);
 
 
 

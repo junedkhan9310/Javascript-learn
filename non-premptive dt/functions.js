@@ -31,11 +31,11 @@ function loginusermess(username){
     return `${username} just logged in`
 }
 
-// console.log(loginusermess("juned"));
+console.log(loginusermess("juned"));
 
-// console.log(loginusermess());
+console.log(loginusermess());
 
-//**********************function wit obj and arrray */
+//**********************function wit obj and arrray************** */
 
 function calcu_cartprice(...num1){//agar bohot sari value pgi to
     return num1  //it'll return array of number
@@ -46,7 +46,7 @@ function calcu_cartprice(...num1){//agar bohot sari value pgi to
 // console.log(calcu_cartprice(23,75,343,56,74));
 
 
-//***************Now using object in function
+//***************Now using object in function*******************//
 
 const user={
     name: "juned",
@@ -59,6 +59,10 @@ function userincompany(anybody){
 }
 
 // userincompany(user) we can also pass object directly
+// userincompany({  //we can also pass object directly
+//     name:"kjajoor",
+//     age:78
+// }) 
 
 // userincompany({
 //     name: "naed",
