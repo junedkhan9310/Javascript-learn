@@ -28,11 +28,11 @@ jsUSer.greeting = function() { //adding function to a object
 }
 
 jsUSer.greeting2 = function() { //adding function to a object
-    console.log(`hello babi`, $(this.name));
+    console.log(`hello babi, ${this.name}`);
 }
 
-console.log(jsUSer.greeting());
-console.log(jsUSer.greeting2());
+jsUSer.greeting();
+jsUSer.greeting2()
 
 
 
