@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent-child relationship</title>
+</head>
+<body style="background-color: black; color: wheat;">
+    <div class="parent">
+        <!-- //juned -->
+       <div class="day">Monday</div>
+       <div class="day">Tuesday</div>
+       <div class="day">Webdnesday</div>
+       <div class="day">Thursday</div>
+    </div>
+    
+</body>
+<script>
+    const saved = document.querySelector('.parent')
+    // console.log(saved);
+    // console.log(saved.children);
+    // console.log(saved.children[0].innerHTML);
+
+    // for (let index = 0; index < saved.children.length; index++) {
+    //     console.log(saved.children[index].innerHTML);
+    // }
+    saved.children[1].style.backgroundColor = 'red'
+    console.log(saved.firstElementChild.innerHTML);
+    console.log(saved.lastElementChild.innerHTML);
+    
+    const day1= document.querySelector('.day')
+    // console.log(day1.parentElement);
+    // console.log(day1.nextElementSibling);
+    console.log("nodes:-",saved.childNodes);
+
+
+</script>
+</html>
