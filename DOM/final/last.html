@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last excerise</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguauge(lang_name){
+        const li = document.createElement('li') //we've created a const list with li means it's list
+        li.innerHTML = `${lang_name}`       // here we add value of li we've created
+        document.querySelector('.lang').appendChild(li)     // now we add the child to the end of list
+    }
+    addlanguauge('python')
+    addlanguauge('c++')
+//below another way
+
+
+    function optilangAdd(lang_name){
+        const li = document.createElement('li') //we've created const list with li tag
+        li.appendChild(document.createTextNode(lang_name)) 
+        document.querySelector('.lang').appendChild(li)
+    }
+    optilangAdd('wwe')
+
+
+</script>
+</html>
