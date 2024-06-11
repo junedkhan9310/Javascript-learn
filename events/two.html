@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Juned Kan</h1>
+    <button id="stop">stop</button>
+
+
+</body>
+<script>
+    const myname= ()=>{
+        console.log("juned_Khan");
+    }
+   setTimeout(()=>{
+        // console.log("juned");
+    }, 2000)
+
+    // setInterval(() => {
+    //     console.log("juned");
+
+    // }, 2000);
+
+    // setTimeout(myname, 2000);
+    let changetext= ()=>{ document.querySelector('h1').innerHTML="BestJuned"}
+
+
+//there's also a thing called cleartimeout tat remove the function from time quee
+
+    const changeme =     setTimeout(changetext, 2000)
+    document.querySelector("#stop").addEventListener('click',()=>{
+        clearTimeout(changeme);
+        console.log('stopped');
+
+        
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

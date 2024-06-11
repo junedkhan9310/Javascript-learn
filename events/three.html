@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Juned Khan</h1>
+    <button id="start">start</button>
+
+    <button id="stop">stop</button>
+
+
+</body>
+<script>
+
+
+// const time_update = ()=>{
+//     console.log("juned",Date.now());
+// }
+//      setInterval(time_update, 2000);
+
+//it also takes parameter as string into the function
+
+
+
+// const time_update = (str)=>{
+//     console.log(str,Date.now());
+// }
+//     const interval_id= setInterval(time_update, 2000,"i am the best");
+
+//     clearInterval(interval_id)
+let mID
+const kj = ()=>{console.log("juned")};
+
+function print(){
+    mID =setInterval(kj,1000)
+}
+
+function stop(){
+
+    clearInterval(mID)
+}
+
+document.querySelector('#start').addEventListener('click',print)
+document.querySelector('#stop').addEventListener('click',stop
+    
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
