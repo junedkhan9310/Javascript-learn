@@ -9,6 +9,8 @@ const items = coding.forEach((item)=>{
 
 const mynum= [1,2,3,4,5,6,7,8,9,10]
 
+//**************************filter******************* */
+
 // const newnumb=mynum.filter((num)=> num>4)  //this return values so we save it in  a var
 // console.log(newnumb);
 
