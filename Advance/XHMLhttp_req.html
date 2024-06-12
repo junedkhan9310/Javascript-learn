@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+
+    <div id = "Output" style="color: yellow;"></div>
+    <input type="text" id="rand">
+
+    <button type="button"  id="click">Click Me!</button>
+
+</body>
+
+<script>
+    let requestUrl;
+
+    document.getElementById('click').addEventListener('click',()=>{
+        requestUrl = (document.getElementById('rand').value);
+
+        const xhr =new XMLHttpRequest();
+        xhr.open('GET',requestUrl)
+
+        let mydiv= document.getElementById('Output')
+        xhr.onreadystatechange= function(){
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText); //converts string to json
+            mydiv.innerHTML= data.bio
+            
+        }
+    }
+
+        xhr.send()
+
+
+
+
+
+
+
+
+        
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // "use strict";
+    // // const requestUrl= "https://api.github.com/users/hiteshchoudhary"
+    // const xhr =new XMLHttpRequest();
+    // xhr.open('GET',requestUrl)
+
+    // xhr.onreadystatechange= function(){
+    //     console.log(xhr.readyState);
+    //     if(xhr.readyState === 4){
+    //         const data = JSON.parse(this.responseText); //converts string to json
+    //         console.log(data.followers);
+            
+    //     }
+    // }
+    // xhr.send()
+
+
+</script>
+</html>
