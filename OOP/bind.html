@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react</title>
+</head>
+<body>
+    <button>button clicked</button>
+</body>
+<script>
+    class React{
+        constructor(){
+            this.username='juned',//-------1
+            this.server= 'https//server'//--------2
+
+            //requremment
+            document.querySelector('button').addEventListener('click',this.handleclick.bind(this))//when we write bind(this) it send all of this with 1 and 2
+            
+        }
+        handleclick(){
+            console.log('button clicked');
+            console.log(this.server);//this this refrence is working but it's  not accessing server we can't use call cause uska sirf refrence nahi dena execute karna hai(attach)
+        }
+    }
+
+    const app = new React()
+
+
+
+</script>
+</html>
